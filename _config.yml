@@ -1,0 +1,3 @@
+markdown: redcarpet
+bseurl: /planets-of-the-universe
+exclude: ['README.md']
