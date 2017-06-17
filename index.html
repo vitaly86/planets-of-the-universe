@@ -4,3 +4,24 @@ layout: default
 
 <h1>Planets of the Universe</h1>
 <p>Lot's of planets in the Universe</p>
+
+<h2>Types of Planet</h2>
+
+<ol>
+{% for planet in site.categories.planet-type %}
+    <li><a href="#">{{ planet.title }}</a>
+      {{ planet.content }}
+    </li>
+{% endfor %}
+</ol>
+
+<h2>Recently Discovered Planets</h2>
+
+<ul class="blog">
+  {% for news in site.categories.februar limit:3 %}
+    <li class="blog-info">
+      <a href="">{{ news.title }}</a>
+      <p>{{ news.meta }}</p>
+    </li>
+  {% endfor %}
+</ul>

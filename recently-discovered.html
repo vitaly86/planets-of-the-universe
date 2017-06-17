@@ -2,13 +2,13 @@
 layout: news-article
 ---
 
-<h1>Planetary News</h1>
+<h1>Recenly Discovered Planets</h1>
 
 <ul class="blog">
-  {% for news in site.categories.news %}
+  {% for news in site.categories.mars %}
   <li class="blog-info">
     <a href="{{site.baseurl}}{{news.url}}">{{news.title}}</a>
-    <p>{{news.meta}}</p>
+    <p>{{ news.meta }}</p>
   </li>
   {% endfor %}
 </ul>

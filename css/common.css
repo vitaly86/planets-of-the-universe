@@ -1,0 +1,40 @@
+html {
+  margin: 0;
+  padding: 0;
+
+  font: normal 100%/1.4 Georgia,serif;
+}
+
+.current {
+  background-color: #000531;
+  color: #fff;
+}
+
+nav {
+  height: 42px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: list-item;
+
+  list-style-type: disc;
+}
+
+li {
+  display: inline-block;
+}
+
+.nav-top {
+  font-size: 1.25em;
+}
+
+.blog {
+    display: list-item;
+    list-style-type: disc;
+}
+
+.blog-info {
+  display: block;
+}
