@@ -8,12 +8,14 @@ layout: default
 <h2>Types of Planet</h2>
 
 <ol style="list-style-type:decimal;">
-{% for planet in site.categories.planet-type %}
-    <li>
+
+{% for planet in site.data.planet-types %}
+    <li style="list-style-type:decimal;">
       <a href="#">{{ planet.title }}</a>
-      {{ planet.content }}
+      {{ planet.content | mardownify }}
     </li>
 {% endfor %}
+
 </ol>
 
 <h2>Recently Discovered Planets</h2>
