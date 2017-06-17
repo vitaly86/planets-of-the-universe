@@ -7,9 +7,10 @@ layout: default
 
 <h2>Types of Planet</h2>
 
-<ol>
+<ol style="list-style-type:decimal;">
 {% for planet in site.categories.planet-type %}
-    <li><a href="#">{{ planet.title }}</a>
+    <li>
+      <a href="#">{{ planet.title }}</a>
       {{ planet.content }}
     </li>
 {% endfor %}
