@@ -9,5 +9,5 @@ orbit: 4.6 years
 radius: 487km
 tilt: 3°
 image: makemake.jpg
-source: http://en.wikipedia.org/wiki/Ceres_(dwarf_planet)
+source: http://en.wikipedia.org/wiki/Makemake
 ---
