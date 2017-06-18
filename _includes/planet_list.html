@@ -1,0 +1,10 @@
+<ul class="blog">
+  {% for planet in site.pages %}
+    {% if planet.type == include.type %}
+      <li class="blog-info">
+        <strong>{{planet.title}}</strong>
+        <p>{{planet.meta}}</p>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

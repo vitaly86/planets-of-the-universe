@@ -6,8 +6,8 @@ layout: default
 
 <nav>
   <ul class="blog">
-    <li class="blog-info"><a href="{{site.baseurl}}/news.html">Planetary News</a></li>
-    <li class="blog-info"><a href="{{site.baseurl}}/recently-discovered.html">Recently Discovered Planets</a></li>
+    <li class="blog-info"><a href="{{site.baseurl}}/news.html" class="{% if page.url contains 'news.html' %}current{% endif %}">Planetary News</a></li>
+    <li class="blog-info"><a href="{{site.baseurl}}/recently-discovered.html" class="{% if page.url contains 'recently-discovered.html' %}current{% endif %}">Recently Discovered Planets</a></li>
   </ul>
 </nav>
 
