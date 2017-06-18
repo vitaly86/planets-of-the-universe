@@ -9,9 +9,9 @@ layout: default
 
 <ol style="list-style-type:decimal;">
 
-{% for planet in site.data.planet-types %}
+{% for planet in site.categories.planet-type %}
     <li style="list-style-type:decimal;">
-      <a href="{{site.baseurl}}/planets/{{planet.folder}}">{{ planet.title }}</a>
+      <a href="{{site.baseurl}}/planets/{{planet.folder}}/">{{ planet.title }}</a>
       {{ planet.content | mardownify }}
     </li>
 {% endfor %}
@@ -23,7 +23,7 @@ layout: default
 <ul class="blog">
   {% for news in site.categories.februar limit:3 %}
     <li class="blog-info">
-      <a href="">{{ news.title }}</a>
+      <a href="#">{{ news.title }}</a>
       <p>{{ news.meta }}</p>
     </li>
   {% endfor %}
