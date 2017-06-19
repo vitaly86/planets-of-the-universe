@@ -11,7 +11,7 @@ layout: default
 
 {% for planet in site.categories.planet-type %}
     <li style="list-style-type:decimal;">
-      <a href="{{site.baseurl}}/planets/{{planet.folder}}/">{{ planet.title }}</a>
+      <a href="{{site.baseurl}}/planets/{{planet.folder}}/">{{planet.title}}</a>
       {{ planet.content | mardownify }}
     </li>
 {% endfor %}
